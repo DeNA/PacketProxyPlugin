@@ -3,11 +3,11 @@
 ```bash
 $ git clone https://github.com/dena/PacketProxyPlugin.git
 $ cd PacketProxyPlugin/
-$ vi src/main/java/packetproxy/encode/packetproxyplugin/EncodeHoge.java # エンコードモジュールを実装してください
-$ ./gradlew build
+$ vi src/main/java/packetproxyplugin/EncodeHoge.java # エンコードモジュールを実装してください
+$ ./gradlew shadowJar
 ```
 
-ビルドに成功すると `build/libs/PakcetProxyPlugin-[バージョン].jar` が生成されます。
+ビルドに成功すると `build/libs/PakcetProxyPlugin-[バージョン]-all.jar` が生成されます。
 
 生成されたjarファイルを `[Home]/.packetproxy/plugins/` にコピーすることで、PacketProxyに読み込ませることができます。
 
