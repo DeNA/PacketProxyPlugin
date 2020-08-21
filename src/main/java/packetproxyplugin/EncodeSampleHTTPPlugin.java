@@ -25,6 +25,10 @@ public class EncodeSampleHTTPPlugin extends EncodeHTTPBase {
         return "SampleHTTP from plugin";
     }
 
+    public EncodeSampleHTTPPlugin(String ALPN) throws Exception {
+        super(ALPN);
+    }
+
     @Override
     protected Http decodeClientRequestHttp(Http inputHttp) throws Exception {
         return inputHttp;
